@@ -1,0 +1,801 @@
+Description,Category
+"""Pet food and supplies""",Pets
+"""Internet router upgrade""",Electronics
+"""Online course on Data Science""",Education
+"""Repair of home appliances""",Household
+"""Cost of attending a networking event""",Professional Services
+"""Birthday gift for a friend""",Gifts
+"""Electricity bill payment""",Utilities
+"""Pet grooming session""",Pets
+"""Subscription to a digital fitness program""",Health & Fitness
+"""Online cooking class subscription""",Food
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Tax consultant fee""",Professional Services
+"""Wedding gift for a colleague""",Gifts
+"""Postage for sending packages""",Business Expenses
+"""Online cooking class subscription""",Food
+"""Monthly rent for office space""",Rent
+"""Books for professional development""",Education
+"""Monthly loan repayment""",Debt Repayment
+"""Household cleaning supplies""",Household
+"""Repair of home appliances""",Household
+"""Cost of digital marketing campaign""",Marketing
+"""Driver tip for a car service""",Transport
+"""Cost of attending a networking event""",Professional Services
+"""Cost of digital marketing campaign""",Marketing
+"""Tax consultant fee""",Professional Services
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Monthly grocery bill at Whole Foods""",Food
+"""Online course on Data Science""",Education
+"""New laptop for work""",Electronics
+"""Cost of digital marketing campaign""",Marketing
+"""Donation to charity""",Charity
+"""Wedding gift for a colleague""",Gifts
+"""Birthday gift for a friend""",Gifts
+"""Art supplies for painting""",Hobbies
+"""Gift card purchase for employee""",Gifts
+"""Tickets for a theater play""",Entertainment
+"""Gift card purchase for employee""",Gifts
+"""Public transport monthly pass""",Transport
+"""Water bill payment""",Utilities
+"""Art supplies for painting""",Hobbies
+"""Cost of digital marketing campaign""",Marketing
+"""New pair of sunglasses""",Clothing
+"""Subscription to a news outlet""",Entertainment
+"""Food delivery from local restaurant""",Food
+"""Electric scooter rental""",Transport
+"""New headphones for work""",Electronics
+"""Subscription to a digital fitness program""",Health & Fitness
+"""Monthly internet service bill""",Utilities
+"""Electricity backup generator purchase""",Household
+"""Cost of digital marketing campaign""",Marketing
+"""New laptop bag""",Clothing
+"""Cloud note-taking app subscription""",Subscriptions
+"""Household insurance premium""",Insurance
+"""Repair of home appliances""",Household
+"""Night out with friends at a bar""",Entertainment
+"""Subscription to a news outlet""",Entertainment
+"""Food delivery from local restaurant""",Food
+"""Pet grooming session""",Pets
+"""Fuel for the car""",Transport
+"""Art supplies for painting""",Hobbies
+"""Cleaning service for the apartment""",Personal Care
+"""Insurance premium payment""",Insurance
+"""Cost of digital marketing campaign""",Marketing
+"""Pet grooming session""",Pets
+"""Online newspaper subscription""",Subscriptions
+"""Cleaning service for office""",Business Expenses
+"""Costco membership renewal""",Shopping
+"""New headphones for work""",Electronics
+"""Event registration fee""",Education
+"""Household cleaning supplies""",Household
+"""Donation to a cause""",Charity
+"""Uber ride to the airport""",Transport
+"""Cost of digital marketing campaign""",Marketing
+"""Tax consultant fee""",Professional Services
+"""Bank service fee""",Bills and Fees
+"""Household insurance premium""",Insurance
+"""Household cleaning supplies""",Household
+"""Monthly loan repayment""",Debt Repayment
+"""Monthly loan repayment""",Debt Repayment
+"""Pet grooming session""",Pets
+"""Movie tickets for the weekend""",Entertainment
+"""Pet grooming session""",Pets
+"""Purchase of kitchenware""",Household
+"""Dining out at a restaurant""",Food
+"""Flight upgrade to business class""",Travel
+"""Premium newsletter membership""",Subscriptions
+"""Tickets for a sports event""",Entertainment
+"""Magazine subscription for business trends""",Books
+"""Movie tickets for the weekend""",Entertainment
+"""Food delivery from local restaurant""",Food
+"""Tax consultant fee""",Professional Services
+"""Phone bill payment""",Utilities
+"""Subscription to a news outlet""",Entertainment
+"""Costco membership renewal""",Shopping
+"""Insurance for personal vehicle""",Insurance
+"""Pet grooming session""",Pets
+"""Monthly loan repayment""",Debt Repayment
+"""Grocery shopping at Walmart""",Food
+"""Amazon purchase for home gadgets""",Electronics
+"""Tickets for a sports event""",Entertainment
+"""Art supplies for painting""",Hobbies
+"""Haircut at the salon""",Personal Care
+"""Donation to a cause""",Charity
+"""New pair of sunglasses""",Clothing
+"""Night out with friends at a bar""",Entertainment
+"""Laundry service""",Personal Care
+"""Uber ride to the airport""",Transport
+"""Home décor items from IKEA""",Household
+"""Uber ride to the airport""",Transport
+"""Grocery shopping at Walmart""",Food
+"""Amazon Prime subscription""",Entertainment
+"""Tickets for a theater play""",Entertainment
+"""Monthly loan repayment""",Debt Repayment
+"""Cloud note-taking app subscription""",Subscriptions
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Home décor items from IKEA""",Household
+"""Insurance premium payment""",Insurance
+"""Household cleaning supplies""",Household
+"""Government filing fee""",Bills and Fees
+"""Electricity bill payment""",Utilities
+"""Monthly parking fee""",Transport
+"""Event registration fee""",Education
+"""New laptop for work""",Electronics
+"""Purchase of kitchenware""",Household
+"""Parking ticket fine""",Transport
+"""Water bill payment""",Utilities
+"""New laptop for work""",Electronics
+"""Electricity backup generator purchase""",Household
+"""Subscription to cloud storage service""",Software
+"""Food delivery from local restaurant""",Food
+"""Tax consultant fee""",Professional Services
+"""Monthly loan repayment""",Debt Repayment
+"""Insurance for personal vehicle""",Insurance
+"""Fuel for the car""",Transport
+"""Electricity bill payment""",Utilities
+"""Postage for sending packages""",Business Expenses
+"""Gift card purchase for employee""",Gifts
+"""Online course on Data Science""",Education
+"""Wedding gift for a colleague""",Gifts
+"""Electricity backup generator purchase""",Household
+"""Donation to charity""",Charity
+"""Mobile phone case purchase""",Electronics
+"""Weekend getaway accommodation""",Travel
+"""Home décor items from IKEA""",Household
+"""Gym membership fee""",Health & Fitness
+"""Monthly rent for office space""",Rent
+"""Monthly rent for office space""",Rent
+"""Book purchase from Amazon""",Books
+"""Cost of attending a networking event""",Professional Services
+"""Premium newsletter membership""",Subscriptions
+"""Monthly loan repayment""",Debt Repayment
+"""Costco membership renewal""",Shopping
+"""New headphones for work""",Electronics
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Professional photography session""",Personal Care
+"""Donation to charity""",Charity
+"""Cleaning service for the apartment""",Personal Care
+"""Driver tip for a car service""",Transport
+"""Pet grooming session""",Pets
+"""Gift card purchase for employee""",Gifts
+"""Birthday gift for a friend""",Gifts
+"""Costco membership renewal""",Shopping
+"""Repair of home appliances""",Household
+"""Donation to charity""",Charity
+"""Health insurance premium""",Insurance
+"""Subscription to cloud storage service""",Software
+"""Night out with friends at a bar""",Entertainment
+"""Flight tickets for an international trip""",Travel
+"""Monthly rent for office space""",Rent
+"""Repair of home appliances""",Household
+"""Monthly rent payment""",Rent
+"""Postage for sending packages""",Business Expenses
+"""Monthly parking fee""",Transport
+"""Subscription to cloud storage service""",Software
+"""Airbnb stay for a weekend trip""",Travel
+"""Online shopping for clothes""",Clothing
+"""Cleaning service for office""",Business Expenses
+"""New pair of running shoes from Nike""",Clothing
+"""Uber Eats order for lunch""",Food
+"""Wedding gift for a colleague""",Gifts
+"""Purchase of kitchenware""",Household
+"""New pair of sunglasses""",Clothing
+"""Online course on Data Science""",Education
+"""Subscription to cloud storage service""",Software
+"""Subscription to a digital fitness program""",Health & Fitness
+"""Annual subscription for Adobe Creative Cloud""",Software
+"""Bank service fee""",Bills and Fees
+"""Electricity backup generator purchase""",Household
+"""Hotel stay for a business trip""",Travel
+"""Insurance for personal vehicle""",Insurance
+"""Online course on Data Science""",Education
+"""Tax consultant fee""",Professional Services
+"""Wine and snacks for a party""",Food
+"""Professional photography session""",Personal Care
+"""Book purchase from Amazon""",Books
+"""Cost of digital marketing campaign""",Marketing
+"""Book purchase from Amazon""",Books
+"""Monthly rent for office space""",Rent
+"""Yoga class membership""",Health & Fitness
+"""New pair of running shoes from Nike""",Clothing
+"""Purchase of kitchenware""",Household
+"""Cleaning service for office""",Business Expenses
+"""Haircut at the salon""",Personal Care
+"""Home internet service""",Utilities
+"""Costco membership renewal""",Shopping
+"""Purchase of kitchenware""",Household
+"""Donation to charity""",Charity
+"""Pet grooming session""",Pets
+"""Weekend spa visit""",Personal Care
+"""Magazine subscription for business trends""",Books
+"""Costco membership renewal""",Shopping
+"""Household cleaning supplies""",Household
+"""Wedding anniversary gift""",Gifts
+"""Costco membership renewal""",Shopping
+"""Online cooking class subscription""",Food
+"""Health and wellness coaching""",Health & Fitness
+"""Books for professional development""",Education
+"""Subscription to a news outlet""",Entertainment
+"""Online newspaper subscription""",Subscriptions
+"""Personal development seminar fee""",Education
+"""Grocery shopping at Walmart""",Food
+"""Monthly internet service bill""",Utilities
+"""Personal development seminar fee""",Education
+"""Flight tickets for an international trip""",Travel
+"""Hotel stay for a business trip""",Travel
+"""Donation to charity""",Charity
+"""Gym membership fee""",Health & Fitness
+"""Art supplies for painting""",Hobbies
+"""Tickets for a sports event""",Entertainment
+"""Book on business strategy""",Books
+"""Mobile phone case purchase""",Electronics
+"""Donation to a cause""",Charity
+"""Internet router upgrade""",Electronics
+"""Subscription to cloud storage service""",Software
+"""Electric scooter rental""",Transport
+"""Book on business strategy""",Books
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Phone bill payment""",Utilities
+"""Cleaning supplies for the home""",Household
+"""Cost of digital marketing campaign""",Marketing
+"""Bank service fee""",Bills and Fees
+"""Art supplies for painting""",Hobbies
+"""Water bill payment""",Utilities
+"""Dinner delivery from DoorDash""",Food
+"""Donation to charity""",Charity
+"""Subscription to a digital fitness program""",Health & Fitness
+"""Water bill payment""",Utilities
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Annual subscription for Adobe Creative Cloud""",Software
+"""Subscription to cloud storage service""",Software
+"""Online course on Data Science""",Education
+"""Wedding anniversary gift""",Gifts
+"""Cost of attending a networking event""",Professional Services
+"""Dining out at a restaurant""",Food
+"""Event registration fee""",Education
+"""Electricity bill payment""",Utilities
+"""Professional photography session""",Personal Care
+"""Uber ride to the airport""",Transport
+"""Book on business strategy""",Books
+"""New laptop for work""",Electronics
+"""Art supplies for painting""",Hobbies
+"""Cleaning supplies for office""",Business Expenses
+"""Home internet service""",Utilities
+"""Books for professional development""",Education
+"""Monthly grocery bill at Whole Foods""",Food
+"""Subscription to professional journal""",Education
+"""Donation to a cause""",Charity
+"""Personal development seminar fee""",Education
+"""Tickets for a theater play""",Entertainment
+"""Cost of digital marketing campaign""",Marketing
+"""Amazon purchase for home gadgets""",Electronics
+"""Monthly grocery bill at Whole Foods""",Food
+"""ATM withdrawal charge""",Bills and Fees
+"""Dinner delivery from DoorDash""",Food
+"""Electricity backup generator purchase""",Household
+"""Monthly loan repayment""",Debt Repayment
+"""Renters' insurance""",Insurance
+"""New laptop for work""",Electronics
+"""Cost of digital marketing campaign""",Marketing
+"""Book on business strategy""",Books
+"""Car maintenance service""",Transport
+"""Government filing fee""",Bills and Fees
+"""Online shopping for clothes""",Clothing
+"""Costco membership renewal""",Shopping
+"""Magazine subscription for business trends""",Books
+"""Tax consultant fee""",Professional Services
+"""Water bill payment""",Utilities
+"""Monthly parking fee""",Transport
+"""Tax consultant fee""",Professional Services
+"""Home internet service""",Utilities
+"""Wedding anniversary gift""",Gifts
+"""Electric scooter rental""",Transport
+"""Tickets for a theater play""",Entertainment
+"""Weekend getaway accommodation""",Travel
+"""Monthly loan repayment""",Debt Repayment
+"""Monthly internet service bill""",Utilities
+"""Cloud note-taking app subscription""",Subscriptions
+"""Public transport monthly pass""",Transport
+"""New pair of running shoes from Nike""",Clothing
+"""Health insurance premium""",Insurance
+"""ATM withdrawal charge""",Bills and Fees
+"""Cost of attending a networking event""",Professional Services
+"""Bank service fee""",Bills and Fees
+"""Donation to charity""",Charity
+"""Subscription to professional journal""",Education
+"""Public transport monthly pass""",Transport
+"""Dining at a local café""",Food
+"""Repair of home appliances""",Household
+"""Electricity backup generator purchase""",Household
+"""Event registration fee""",Education
+"""Household cleaning supplies""",Household
+"""Professional photography session""",Personal Care
+"""New laptop for work""",Electronics
+"""Food delivery from local restaurant""",Food
+"""Wedding gift for a colleague""",Gifts
+"""Weekend trip to the beach""",Travel
+"""Insurance premium payment""",Insurance
+"""Home internet service""",Utilities
+"""Purchase of kitchenware""",Household
+"""Art supplies for painting""",Hobbies
+"""ATM withdrawal charge""",Bills and Fees
+"""Subscription to a digital fitness program""",Health & Fitness
+"""Weekend trip to the beach""",Travel
+"""Subscription to professional journal""",Education
+"""Book on business strategy""",Books
+"""Monthly grocery bill at Whole Foods""",Food
+"""Business lunch with a client""",Food
+"""Public transport monthly pass""",Transport
+"""Magazine subscription for business trends""",Books
+"""Weekend getaway accommodation""",Travel
+"""Pet food and supplies""",Pets
+"""Taxi ride from the airport""",Transport
+"""Household insurance premium""",Insurance
+"""Subscription to a data analytics tool""",Software
+"""Subscription to a news outlet""",Entertainment
+"""Monthly Spotify subscription""",Entertainment
+"""Wine and snacks for a party""",Food
+"""Monthly rent payment""",Rent
+"""Coffee shop order during work break""",Food
+"""New smartphone purchase""",Electronics
+"""Flight tickets for an international trip""",Travel
+"""Weekend getaway accommodation""",Travel
+"""Monthly subscription to Netflix""",Entertainment
+"""Cost of digital marketing campaign""",Marketing
+"""Mobile phone case purchase""",Electronics
+"""Event registration fee""",Education
+"""Subscription to a news outlet""",Entertainment
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Parking fee for work""",Transport
+"""Subscription to cloud storage service""",Software
+"""Tax consultant fee""",Professional Services
+"""Phone bill payment""",Utilities
+"""Wine and snacks for a party""",Food
+"""Amazon purchase for home gadgets""",Electronics
+"""New pair of running shoes from Nike""",Clothing
+"""Movie tickets for the weekend""",Entertainment
+"""Monthly loan repayment""",Debt Repayment
+"""Donation to charity""",Charity
+"""Insurance for personal vehicle""",Insurance
+"""Grocery shopping at Walmart""",Food
+"""Household cleaning supplies""",Household
+"""Event registration fee""",Education
+"""Pet grooming session""",Pets
+"""Personal development seminar fee""",Education
+"""New laptop for work""",Electronics
+"""Monthly rent payment""",Rent
+"""Cleaning supplies for the home""",Household
+"""Concert tickets for a live band""",Entertainment
+"""Home décor items from IKEA""",Household
+"""Pet grooming session""",Pets
+"""Weekend trip to the beach""",Travel
+"""Health insurance premium""",Insurance
+"""Online course on Data Science""",Education
+"""Monthly rent for office space""",Rent
+"""Costco membership renewal""",Shopping
+"""Books for professional development""",Education
+"""Subscription to a data analytics tool""",Software
+"""Gym membership fee""",Health & Fitness
+"""Costco membership renewal""",Shopping
+"""Books for professional development""",Education
+"""Tickets for a sports event""",Entertainment
+"""Phone bill payment""",Utilities
+"""Weekend spa visit""",Personal Care
+"""Costco membership renewal""",Shopping
+"""Pet grooming session""",Pets
+"""Event registration fee""",Education
+"""Subscription to a digital fitness program""",Health & Fitness
+"""Annual subscription for Adobe Creative Cloud""",Software
+"""Pet grooming session""",Pets
+"""Bank service fee""",Bills and Fees
+"""Donation to a cause""",Charity
+"""Monthly subscription to Netflix""",Entertainment
+"""Home internet service""",Utilities
+"""Art supplies for painting""",Hobbies
+"""New smartphone purchase""",Electronics
+"""Amazon Prime subscription""",Entertainment
+"""Books for professional development""",Education
+"""Groceries from Target""",Food
+"""Event registration fee""",Education
+"""Fuel for the car""",Transport
+"""Subscription to a digital fitness program""",Health & Fitness
+"""New headphones for work""",Electronics
+"""Weekend getaway accommodation""",Travel
+"""Tickets for a sports event""",Entertainment
+"""Airbnb stay for a weekend trip""",Travel
+"""Book on business strategy""",Books
+"""Cost of attending a networking event""",Professional Services
+"""Personal health check-up""",Health & Fitness
+"""Wedding gift for a colleague""",Gifts
+"""Book on business strategy""",Books
+"""Book purchase from Amazon""",Books
+"""Amazon Prime subscription""",Entertainment
+"""Monthly internet service bill""",Utilities
+"""Cost of digital marketing campaign""",Marketing
+"""Online cooking class subscription""",Food
+"""Cost of digital marketing campaign""",Marketing
+"""Books for professional development""",Education
+"""Monthly loan repayment""",Debt Repayment
+"""Dining at a local café""",Food
+"""Uber ride to the airport""",Transport
+"""Art supplies for painting""",Hobbies
+"""New smartphone purchase""",Electronics
+"""Phone bill payment""",Utilities
+"""Annual subscription for Adobe Creative Cloud""",Software
+"""Tickets for a concert""",Entertainment
+"""Electricity bill payment""",Utilities
+"""Home internet service""",Utilities
+"""Dining out at a restaurant""",Food
+"""Haircut at the salon""",Personal Care
+"""Online grocery order from Instacart""",Food
+"""Amazon purchase for home gadgets""",Electronics
+"""Parcel delivery for business""",Business Expenses
+"""New smartphone purchase""",Electronics
+"""Amazon purchase for home gadgets""",Electronics
+"""Coffee shop order during work break""",Food
+"""Online course on Data Science""",Education
+"""Electricity bill payment""",Utilities
+"""Donation to charity""",Charity
+"""Cost of digital marketing campaign""",Marketing
+"""Gift card purchase for employee""",Gifts
+"""Birthday gift for a friend""",Gifts
+"""Online grocery order from Instacart""",Food
+"""Car maintenance service""",Transport
+"""New laptop for work""",Electronics
+"""Government filing fee""",Bills and Fees
+"""Flight tickets for an international trip""",Travel
+"""Electric scooter rental""",Transport
+"""Amazon purchase for home gadgets""",Electronics
+"""Cleaning supplies for the home""",Household
+"""Donation to a cause""",Charity
+"""Donation to a cause""",Charity
+"""Cloud note-taking app subscription""",Subscriptions
+"""Online grocery order from Instacart""",Food
+"""Haircut at the salon""",Personal Care
+"""Electricity bill payment""",Utilities
+"""Internet router upgrade""",Electronics
+"""Government filing fee""",Bills and Fees
+"""Magazine subscription for business trends""",Books
+"""Cost of attending a networking event""",Professional Services
+"""Hotel stay for a business trip""",Travel
+"""Yoga class membership""",Health & Fitness
+"""Dining out at a restaurant""",Food
+"""Household cleaning supplies""",Household
+"""Monthly parking fee""",Transport
+"""Haircut at the salon""",Personal Care
+"""Online course on Data Science""",Education
+"""Costco membership renewal""",Shopping
+"""New pair of sunglasses""",Clothing
+"""Monthly loan repayment""",Debt Repayment
+"""Cost of digital marketing campaign""",Marketing
+"""New headphones for work""",Electronics
+"""Tax consultant fee""",Professional Services
+"""Tickets for a theater play""",Entertainment
+"""Mobile phone case purchase""",Electronics
+"""Monthly internet service bill""",Utilities
+"""Book on business strategy""",Books
+"""Weekend spa visit""",Personal Care
+"""Magazine subscription for business trends""",Books
+"""Monthly rent for office space""",Rent
+"""Subscription to professional journal""",Education
+"""Donation to charity""",Charity
+"""Weekend spa visit""",Personal Care
+"""Monthly rent payment""",Rent
+"""Pet grooming session""",Pets
+"""Book on business strategy""",Books
+"""Internet router upgrade""",Electronics
+"""Birthday gift for a friend""",Gifts
+"""Internet router upgrade""",Electronics
+"""Subscription to a data analytics tool""",Software
+"""New pair of running shoes from Nike""",Clothing
+"""Cost of digital marketing campaign""",Marketing
+"""Electricity bill payment""",Utilities
+"""Uber ride to the airport""",Transport
+"""Books for professional development""",Education
+"""ATM withdrawal charge""",Bills and Fees
+"""Home internet service""",Utilities
+"""Taxi ride from the airport""",Transport
+"""Weekend getaway accommodation""",Travel
+"""Wine and snacks for a party""",Food
+"""Monthly rent for office space""",Rent
+"""Online course on Data Science""",Education
+"""Wine and snacks for a party""",Food
+"""Electric scooter rental""",Transport
+"""New pair of sunglasses""",Clothing
+"""Uber ride to the airport""",Transport
+"""Art supplies for painting""",Hobbies
+"""Wedding anniversary gift""",Gifts
+"""Night out with friends at a bar""",Entertainment
+"""Airbnb stay for a weekend trip""",Travel
+"""Purchase of kitchenware""",Household
+"""Annual subscription for Adobe Creative Cloud""",Software
+"""Uber ride to the airport""",Transport
+"""Weekend getaway accommodation""",Travel
+"""Monthly Spotify subscription""",Entertainment
+"""Monthly subscription to Netflix""",Entertainment
+"""Renters' insurance""",Insurance
+"""Wedding gift for a colleague""",Gifts
+"""Hotel stay for a business trip""",Travel
+"""Dining at a local café""",Food
+"""Fitness tracker purchase""",Health & Fitness
+"""Cost of digital marketing campaign""",Marketing
+"""Groceries from Target""",Food
+"""Home internet service""",Utilities
+"""Donation to charity""",Charity
+"""Online course on Data Science""",Education
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Monthly loan repayment""",Debt Repayment
+"""Internet router upgrade""",Electronics
+"""Costco membership renewal""",Shopping
+"""Cleaning supplies for the home""",Household
+"""Book on business strategy""",Books
+"""Water bill payment""",Utilities
+"""Cost of digital marketing campaign""",Marketing
+"""Cleaning supplies for office""",Business Expenses
+"""Laundry service""",Personal Care
+"""Groceries from Target""",Food
+"""New pair of running shoes from Nike""",Clothing
+"""Electricity backup generator purchase""",Household
+"""Cost of attending a networking event""",Professional Services
+"""Pet grooming session""",Pets
+"""New smartphone purchase""",Electronics
+"""Cleaning supplies for the home""",Household
+"""Household cleaning supplies""",Household
+"""Tax consultant fee""",Professional Services
+"""Amazon Prime subscription""",Entertainment
+"""Subscription to a data analytics tool""",Software
+"""Cost of digital marketing campaign""",Marketing
+"""Book on business strategy""",Books
+"""Repair of home appliances""",Household
+"""Fuel for the car""",Transport
+"""Home décor items from IKEA""",Household
+"""Monthly loan repayment""",Debt Repayment
+"""Art supplies for painting""",Hobbies
+"""Monthly rent for office space""",Rent
+"""Donation to charity""",Charity
+"""Subscription to cloud storage service""",Software
+"""Monthly loan repayment""",Debt Repayment
+"""Cleaning supplies for the home""",Household
+"""Grocery shopping at Walmart""",Food
+"""New smartphone purchase""",Electronics
+"""Cleaning service for the apartment""",Personal Care
+"""Book purchase from Amazon""",Books
+"""Monthly rent payment""",Rent
+"""Purchase of kitchenware""",Household
+"""Public transport monthly pass""",Transport
+"""Repair of home appliances""",Household
+"""Book purchase from Amazon""",Books
+"""New laptop bag""",Clothing
+"""Subscription to cloud storage service""",Software
+"""Art supplies for painting""",Hobbies
+"""Birthday gift for a friend""",Gifts
+"""Amazon Prime subscription""",Entertainment
+"""New headphones for work""",Electronics
+"""Water bill payment""",Utilities
+"""Wedding anniversary gift""",Gifts
+"""Driver tip for a car service""",Transport
+"""Haircut at the salon""",Personal Care
+"""Car maintenance service""",Transport
+"""Car maintenance service""",Transport
+"""Monthly internet service bill""",Utilities
+"""Pet food and supplies""",Pets
+"""Subscription to cloud storage service""",Software
+"""Monthly rent for office space""",Rent
+"""Household insurance premium""",Insurance
+"""Cost of attending a networking event""",Professional Services
+"""Tax consultant fee""",Professional Services
+"""Magazine subscription for business trends""",Books
+"""Cleaning supplies for the home""",Household
+"""Costco membership renewal""",Shopping
+"""Internet router upgrade""",Electronics
+"""Yoga class membership""",Health & Fitness
+"""Gift card purchase for employee""",Gifts
+"""Wine and snacks for a party""",Food
+"""New laptop bag""",Clothing
+"""Household cleaning supplies""",Household
+"""Gift card purchase for employee""",Gifts
+"""Haircut at the salon""",Personal Care
+"""Cleaning supplies for the home""",Household
+"""Book purchase from Amazon""",Books
+"""Magazine subscription for business trends""",Books
+"""Tax consultant fee""",Professional Services
+"""Tax consultant fee""",Professional Services
+"""Electricity bill payment""",Utilities
+"""Taxi ride from the airport""",Transport
+"""Yoga class membership""",Health & Fitness
+"""Cost of digital marketing campaign""",Marketing
+"""Health and wellness coaching""",Health & Fitness
+"""Personal development seminar fee""",Education
+"""Uber Eats order for lunch""",Food
+"""Donation to charity""",Charity
+"""Cleaning service for the apartment""",Personal Care
+"""Online course on Data Science""",Education
+"""Yoga mat and accessories""",Health & Fitness
+"""Electricity bill payment""",Utilities
+"""Magazine subscription for business trends""",Books
+"""Monthly loan repayment""",Debt Repayment
+"""Mobile phone case purchase""",Electronics
+"""Electricity bill payment""",Utilities
+"""Weekend trip to the beach""",Travel
+"""Monthly loan repayment""",Debt Repayment
+"""Phone bill payment""",Utilities
+"""Monthly rent payment""",Rent
+"""Home décor items from IKEA""",Household
+"""Weekend getaway accommodation""",Travel
+"""Uber ride to the airport""",Transport
+"""Food delivery from local restaurant""",Food
+"""Professional photography session""",Personal Care
+"""Weekend spa visit""",Personal Care
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Books for professional development""",Education
+"""Health and wellness coaching""",Health & Fitness
+"""New smartphone purchase""",Electronics
+"""Night out with friends at a bar""",Entertainment
+"""Electricity bill payment""",Utilities
+"""Fitness tracker purchase""",Health & Fitness
+"""Pet food and supplies""",Pets
+"""Movie tickets for the weekend""",Entertainment
+"""Phone bill payment""",Utilities
+"""Cleaning service for the apartment""",Personal Care
+"""Personal development seminar fee""",Education
+"""Donation to a cause""",Charity
+"""Home internet service""",Utilities
+"""Monthly internet service bill""",Utilities
+"""Cost of digital marketing campaign""",Marketing
+"""ATM withdrawal charge""",Bills and Fees
+"""Subscription to professional journal""",Education
+"""Subscription to cloud storage service""",Software
+"""Uber ride to the airport""",Transport
+"""Subscription to a meditation app""",Health & Fitness
+"""Coffee at Starbucks""",Food
+"""New laptop for work""",Electronics
+"""Online shopping for clothes""",Clothing
+"""New pair of running shoes from Nike""",Clothing
+"""Water bill payment""",Utilities
+"""Subscription to a data analytics tool""",Software
+"""Monthly loan repayment""",Debt Repayment
+"""Personal development seminar fee""",Education
+"""Weekend spa visit""",Personal Care
+"""Costco membership renewal""",Shopping
+"""Subscription to cloud storage service""",Software
+"""Monthly loan repayment""",Debt Repayment
+"""Water bill payment""",Utilities
+"""Subscription to professional journal""",Education
+"""Health insurance premium""",Insurance
+"""Household insurance premium""",Insurance
+"""Monthly internet service bill""",Utilities
+"""Professional photography session""",Personal Care
+"""Health insurance premium""",Insurance
+"""Cleaning supplies for the home""",Household
+"""Costco membership renewal""",Shopping
+"""Donation to charity""",Charity
+"""Government filing fee""",Bills and Fees
+"""Electricity bill payment""",Utilities
+"""Art supplies for painting""",Hobbies
+"""Tickets for a sports event""",Entertainment
+"""Uber Eats order for lunch""",Food
+"""Subscription to cloud storage service""",Software
+"""Dining at a local café""",Food
+"""Costco membership renewal""",Shopping
+"""Birthday gift for a friend""",Gifts
+"""Online newspaper subscription""",Subscriptions
+"""Cleaning supplies for office""",Business Expenses
+"""Health and wellness coaching""",Health & Fitness
+"""Subscription to a meditation app""",Health & Fitness
+"""New headphones for work""",Electronics
+"""Electricity bill payment""",Utilities
+"""Taxi ride from the airport""",Transport
+"""Wedding gift for a colleague""",Gifts
+"""Donation to a cause""",Charity
+"""Subscription to professional journal""",Education
+"""Internet router upgrade""",Electronics
+"""Health and wellness coaching""",Health & Fitness
+"""Night out with friends at a bar""",Entertainment
+"""Costco membership renewal""",Shopping
+"""Personal health check-up""",Health & Fitness
+"""Car maintenance service""",Transport
+"""Water bill payment""",Utilities
+"""Books for professional development""",Education
+"""Cost of digital marketing campaign""",Marketing
+"""Gas refill for the car""",Transport
+"""Electricity bill payment""",Utilities
+"""Mobile phone case purchase""",Electronics
+"""Tax consultant fee""",Professional Services
+"""Government filing fee""",Bills and Fees
+"""Uber ride to the office""",Transport
+"""Postage for sending packages""",Business Expenses
+"""Monthly rent payment""",Rent
+"""Phone bill payment""",Utilities
+"""Art supplies for painting""",Hobbies
+"""Books for professional development""",Education
+"""Household insurance premium""",Insurance
+"""Cost of digital marketing campaign""",Marketing
+"""Professional photography session""",Personal Care
+"""Monthly loan repayment""",Debt Repayment
+"""Taxi ride from the airport""",Transport
+"""Cost of digital marketing campaign""",Marketing
+"""Book on business strategy""",Books
+"""Pet food and supplies""",Pets
+"""Subscription to professional journal""",Education
+"""Book on business strategy""",Books
+"""Home décor items from IKEA""",Household
+"""Subscription to a data analytics tool""",Software
+"""Car maintenance service""",Transport
+"""Donation to a cause""",Charity
+"""Cleaning service for the apartment""",Personal Care
+"""Tax consultant fee""",Professional Services
+"""New smartphone purchase""",Electronics
+"""Water bill payment""",Utilities
+"""New smartphone purchase""",Electronics
+"""Cleaning service for office""",Business Expenses
+"""Household cleaning supplies""",Household
+"""Pet grooming session""",Pets
+"""New smartphone purchase""",Electronics
+"""Amazon Prime subscription""",Entertainment
+"""Electricity backup generator purchase""",Household
+"""Taxi ride from the airport""",Transport
+"""Monthly rent for office space""",Rent
+"""Online course on Data Science""",Education
+"""New laptop for work""",Electronics
+"""Household cleaning supplies""",Household
+"""Costco membership renewal""",Shopping
+"""Cost of digital marketing campaign""",Marketing
+"""Art supplies for painting""",Hobbies
+"""Renters' insurance""",Insurance
+"""Monthly rent for office space""",Rent
+"""Home décor items from IKEA""",Household
+"""Driver tip for a car service""",Transport
+"""Home internet service""",Utilities
+"""Flight upgrade to business class""",Travel
+"""Monthly rent payment""",Rent
+"""New laptop for work""",Electronics
+"""Dining at a local café""",Food
+"""Amazon purchase for home gadgets""",Electronics
+"""Weekend spa visit""",Personal Care
+"""Movie tickets for the weekend""",Entertainment
+"""Monthly rent for office space""",Rent
+"""Donation to a cause""",Charity
+"""Costco membership renewal""",Shopping
+"""Health insurance premium""",Insurance
+"""Cloud note-taking app subscription""",Subscriptions
+"""Wedding gift for a colleague""",Gifts
+"""Cost of digital marketing campaign""",Marketing
+"""Electricity backup generator purchase""",Household
+"""Monthly internet service bill""",Utilities
+"""Monthly rent for office space""",Rent
+"""Home décor items from IKEA""",Household
+"""Monthly loan repayment""",Debt Repayment
+"""Fuel for the car""",Transport
+"""Books for professional development""",Education
+"""Haircut at the salon""",Personal Care
+"""Weekend getaway accommodation""",Travel
+"""Personal development seminar fee""",Education
+"""Books for professional development""",Education
+"""Monthly parking fee""",Transport
+"""Online newspaper subscription""",Subscriptions
+"""Tickets for a theater play""",Entertainment
+"""New smartphone purchase""",Electronics
+"""New laptop bag""",Clothing
+"""Water bill payment""",Utilities
+"""Cloud note-taking app subscription""",Subscriptions
+"""Taxi ride from the airport""",Transport
+"""Art supplies for painting""",Hobbies
+"""Online shopping for clothes""",Clothing
+"""Postage for sending packages""",Business Expenses
+"""Streaming service subscription (HBO Max)""",Entertainment
+"""Weekend trip to the beach""",Travel
+"""Home internet service""",Utilities
+"""Cloud note-taking app subscription""",Subscriptions
+"""Monthly loan repayment""",Debt Repayment
+"""Food delivery from local restaurant""",Food
+"""New laptop for work""",Electronics
+"""Event registration fee""",Education
+"""Pet food and supplies""",Pets
+"""Art supplies for painting""",Hobbies
+"""Subscription to a news outlet""",Entertainment
+"""Donation to a cause""",Charity
+"""Household cleaning supplies""",Household
+"""Movie tickets for the weekend""",Entertainment
+"""Dinner delivery from DoorDash""",Food
+"""Amazon Prime subscription""",Entertainment
