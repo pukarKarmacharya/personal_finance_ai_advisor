@@ -4,6 +4,8 @@ This module provides integration with locally running LLM models via Ollama,
 enhancing the chat capabilities of the Finance Assistant application.
 """
 
+from matplotlib.pylab import f
+import pandas as pd
 import requests
 import json
 import os
@@ -129,23 +131,27 @@ class OllamaAssistant:
         user_info = financial_data.get('user_info', {})
         if user_info:
             context += f"- Name: {user_info.get('name', 'Unknown')}\n"
-            context += f"- Average Income: Rs. {user_info.get('income', 0):,.2f}\n"
-            context += f"- Average Savings: Rs. {user_info.get('savings', 0):,.2f}\n"
-            context += f"- Average Expenses: Rs. {user_info.get('expenses', 0):,.2f}\n"
+            context += f"- Current Income: Rs. {user_info.get('income', 0):,.2f}\n"
+            context += f"- Current Savings: Rs. {user_info.get('savings', 0):,.2f}\n"
+            context += f"- Current Expenses: Rs. {user_info.get('expenses', 0):,.2f}\n"
 
         # Add spending summary
         spending_history = financial_data.get('spending_history', None)
         if spending_history is not None and hasattr(spending_history, 'empty') and not spending_history.empty:
-            avg_monthly_spending = spending_history['Expense'].mean()
+            spending_history["Date"] = pd.to_datetime(spending_history["Date"])
+            last_month = spending_history["Date"].max().to_period("M")
+
+            df_last_month = spending_history[spending_history["Date"].dt.to_period("M") == last_month]
+            avg_monthly_spending = df_last_month['Expense'].mean()
 
             # Calculate spending by category
-            total_by_category = spending_history.groupby("Category")["Expense"].sum().sort_values(ascending=False)
+            total_by_category = df_last_month.groupby("Category")["Expense"].sum().sort_values(ascending=False)
             # Find the top spending category
             top_category = total_by_category.idxmax()
             top_amount = total_by_category.max()
             # Calculate percentage of income
             top_percent = (top_amount / user_info['income']) * 100
-            top_n = total_by_category.head(5)
+            top_n = total_by_category
 
             context += f"- Top Spending Category: {top_category} (Rs.{top_amount:.2f}, {top_percent:.1f}% of income)\n"
             context += "- Top Spending Categories:\n"
@@ -157,10 +163,20 @@ class OllamaAssistant:
             context += f"- Budget Recommendations for next month: {budget_recommendations:,.2f}\n"
 
         # Add forecast info
-        forecast = financial_data.get('forecast', None)
-        if forecast is not None and hasattr(forecast, 'empty') and not forecast.empty:
-            next_month_total = forecast.iloc[0].sum()
-            context += f"- Forecast for Next Month: Rs. {next_month_total:,.2f}\n"
+        forecast_income = financial_data.get('forecast_income', None)
+        if forecast_income is not None and hasattr(forecast_income, 'empty') and not forecast_income.empty:
+            next_month_total = forecast_income.iloc[0]['yhat']
+            context += f"- Forecast income for Next Month: Rs. {next_month_total:,.2f}\n"
+
+        forecast_savings = financial_data.get('forecast_savings', None)
+        if forecast_savings is not None and hasattr(forecast_savings, 'empty') and not forecast_savings.empty:
+            next_month_total = forecast_savings.iloc[0]['yhat']
+            context += f"- Forecast savings for Next Month: Rs. {next_month_total:,.2f}\n"
+
+        forecast_expenses = financial_data.get('forecast_expenses', None)
+        if forecast_expenses is not None and hasattr(forecast_expenses, 'empty') and not forecast_expenses.empty:
+            next_month_total = forecast_expenses.iloc[0]['yhat']
+            context += f"- Forecast expenses for Next Month: Rs. {next_month_total:,.2f}\n"
 
         return context
 

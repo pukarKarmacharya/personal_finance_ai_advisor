@@ -159,7 +159,7 @@ elif option == "Financial Assistance":
 
     # Add a welcome note with examples of what the chatbot can do
     welcome_note = """
-    💬 **Welcome to your Finance Assistant!**
+    Welcome to your Finance Assistant!
 
     I can help you with:
     - Your income and spending patterns
@@ -170,7 +170,7 @@ elif option == "Financial Assistance":
     - Specific spending categories (e.g., 'How much do I spend on food?')
     - Spending over different time periods (daily, weekly, monthly, yearly)
 
-    **Try asking me questions like:**
+    Try asking me questions like:
     - "What's my monthly income?"
     - "How much do I spend each month?"
     - "What's my savings rate?"
@@ -180,7 +180,7 @@ elif option == "Financial Assistance":
     - "How much do I spend on groceries?"
     - "What's my annual spending?"
     """
-    st.markdown(f'<div class="welcome-note">{welcome_note}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="welcome-note">{welcome_note}', unsafe_allow_html=True)
 
     # Create columns for chat interface layout
     chat_col1, chat_col2 = st.columns([8, 2])
@@ -191,20 +191,26 @@ elif option == "Financial Assistance":
         # Add a welcome message from the assistant
         st.session_state.chat_history.append({"is_user": False, "text": "Hi there! I'm your Finance Assistant. How can I help you today?"})
 
+        # Display chat history
+    for message in st.session_state.chat_history:
+        if message['is_user']:
+            st.chat_message("user").write(message['text'])
+        else:
+            st.chat_message("assistant").write(message['text'])
+
     # Create a container for the chat messages with custom styling
     with chat_col1:
         chat_container = st.container()
         with chat_container:
             st.markdown('<div class="chat-container">', unsafe_allow_html=True)
 
-            # Display chat history with custom styling
-            for message in st.session_state.chat_history:
-                if message['is_user']:
-                    st.markdown(f'<div class="chat-message-user">{message["text"]}</div>', unsafe_allow_html=True)
-                else:
-                    st.markdown(f'<div class="chat-message-assistant">{message["text"]}</div>', unsafe_allow_html=True)
+            # # Display chat history with custom styling
+            # for message in st.session_state.chat_history:
+            #     if message['is_user']:
+            #         st.markdown(f'<div class="chat-message-user">{message["text"]}</div>', unsafe_allow_html=True)
+            #     else:
+            #         st.markdown(f'<div class="chat-message-assistant">{message["text"]}</div>', unsafe_allow_html=True)
 
-            st.markdown('</div>', unsafe_allow_html=True)
 
     # Add buttons in the second column
     with chat_col2:
@@ -247,18 +253,22 @@ elif option == "Financial Assistance":
     if user_question:
         # Add user message to chat history
         st.session_state.chat_history.append({"is_user": True, "text": user_question})
+        st.chat_message("user").write(user_question)
 
-        forecast = forecast_expenses(budget_data, 12)
-        budget_recommendations = recommend_budget(forecast.iloc[0], budget_data)
-        avg_saving = budget_data['Saving'].mean()
-        avg_income = budget_data['Income'].mean()
-        avg_expenses = budget_data['Expense'].mean()
+        fi, fs, fe = forecast_financials(budget_data, 2)
+        budget_recommendations = recommend_budget(fi.iloc[0].yhat, budget_data)
+
+        last_row = budget_data.iloc[-1]
+
+        last_income = last_row["Income"]
+        last_expense = last_row["Expense"]
+        last_saving = last_row["Saving"]
 
         user_info = {
             "name": "User",
-            "income": avg_income,
-            "expenses": avg_expenses,
-            "savings": avg_saving
+            "income": float(last_income),
+            "expenses": float(last_expense),
+            "savings": float(last_saving)
         }
         # Generate response
         with st.spinner("Thinking..."):
@@ -266,7 +276,9 @@ elif option == "Financial Assistance":
             financial_data = {
                 "user_info": dict(user_info),
                 "spending_history": spending_history,
-                "forecast": forecast,
+                "forecast_income": fi,
+                "forecast_savings": fs,
+                "forecast_expenses": fe,
                 "overall": budget_data,
                 "budget_recommendations": budget_recommendations
             }
@@ -283,13 +295,15 @@ elif option == "Financial Assistance":
                 response = get_chatbot_response(
                     user_question,
                     spending_history,
-                    forecast,
+                    fi.iloc[0].yhat,
                     budget_data,
                     user_info
                 )
 
         # Add assistant response to chat history
         st.session_state.chat_history.append({"is_user": False, "text": response})
+
+        st.chat_message("assistant").write(response)
 
         # Rerun to update the UI
         st.rerun()
