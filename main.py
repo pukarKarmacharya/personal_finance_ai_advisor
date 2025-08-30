@@ -4,7 +4,7 @@ from utils.data_processing import load_data, preprocess_data
 from utils.classification import predict_expense_category
 from utils.llm_assistant import OllamaAssistant
 from utils.regression import recommend_budget
-from utils.forecasting import forecast_expenses
+from utils.forecasting import forecast_financials
 
 st.title("Personal Finance AI Advisor")
 
@@ -79,9 +79,22 @@ elif option == "Expense Forecasting":
     st.header("Expense Forecasting")
     months = st.number_input("Enter months to forecast:", min_value=1, max_value=12)
     if st.button("Forecast Expenses"):
-        forecast = forecast_expenses(budget_data, months)
-        st.line_chart(forecast)
- 
+        fi, fs, fe = forecast_financials(budget_data, months)
+
+        # fi_plot = fi.set_index('ds')
+        # fs_plot = fs.set_index('ds')
+        # fe_plot = fe.set_index('ds')
+
+        # Each is a 1-col df with datetime index; Streamlit will plot cleanly
+        st.subheader("Income forecast")
+        st.line_chart(fi.set_index('ds').rename(columns={'yhat': 'Income Forecast'}))
+
+        st.subheader("Savings forecast")
+        st.line_chart(fs.set_index('ds').rename(columns={'yhat': 'Savings Forecast'}))
+
+        st.subheader("Expense forecast")
+        st.line_chart(fe.set_index('ds').rename(columns={'yhat': 'Expense Forecast'}))
+
 elif option == "Financial Assistance":
    
  # st.header("Financial Assistance")
