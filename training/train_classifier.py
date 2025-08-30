@@ -23,11 +23,11 @@ y = df["Category"].astype(str)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42,stratify=y)
 
 # Convert text to numerical data using TF-IDF
-vectorizer = TfidfVectorizer(max_features=1000,lowercase=True,)
+vectorizer = TfidfVectorizer(max_features=None,lowercase=True,stop_words='english',ngram_range=(1,2),min_df=1)
 X_train_tfidf = vectorizer.fit_transform(X_train)
 X_test_tfidf = vectorizer.transform(X_test)
 
-classifier = LogisticRegression()
+classifier = LogisticRegression(max_iter=1000,class_weight='balanced',C=2.0)
 classifier.fit(X_train_tfidf, y_train)
 
 y_pred = classifier.predict(X_test_tfidf)

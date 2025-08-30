@@ -2,7 +2,7 @@ import pandas as pd
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 import pickle
 
-data = pd.read_csv("data/monthly_expenses.csv")
+data = pd.read_csv("data/income_saving_expense.csv")
 
 data['Date'] = pd.to_datetime(data['Date'])
 data = data.set_index('Date')

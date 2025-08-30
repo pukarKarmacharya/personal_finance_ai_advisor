@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import pickle
 
-data = pd.read_csv("data/income_expense_saving.csv")
+data = pd.read_csv("data/income_saving_expense.csv")
 
 X = data[['Income', 'Saving']]
 y = data['Expense']

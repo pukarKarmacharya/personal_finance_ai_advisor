@@ -7,7 +7,7 @@ from utils.forecasting import forecast_expenses
 st.title("Personal Finance AI Advisor")
 
 expense_data = load_data("data/expense_descriptions.csv")
-budget_data = load_data("data/income_expense_saving.csv")
+budget_data = load_data("data/income_saving_expense.csv")
 forecast_data = load_data("data/monthly_expenses.csv")
 
 option = st.sidebar.selectbox(
@@ -26,8 +26,10 @@ elif option == "Budget Recommendations":
     st.header("Budget Recommendations")
     income = st.number_input("Enter your monthly income:")
     if st.button("Get Budget Recommendation"):
-        recommendation = recommend_budget(income, budget_data)
-        st.write(f"Recommended Budget: **Rs.{recommendation:.2f}**")
+        breakdown = recommend_budget(income, budget_data)
+        st.write("### Data-Driven Budget")
+        for k, v in breakdown.items():
+            st.write(f"- {k}: Rs.{v:,.2f}")
 
 elif option == "Expense Forecasting":
     st.header("Expense Forecasting")
