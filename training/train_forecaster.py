@@ -26,8 +26,6 @@ df_expense = df_long[df_long["unique_id"] == "Expense"][["ds", "y"]]
 # df_savings_test = df_savings.tail(12)
 # df_savings_train = df_savings.drop(df_savings_test.index).reset_index(drop=True)
 
-# df_expense_test = df_expense.tail(12)
-# df_expense_train = df_expense.drop(df_expense_test.index).reset_index(drop=True)
 
 model_prophet_income = Prophet()
 model_prophet_income.fit(df_income)
@@ -54,7 +52,42 @@ model_prophet_expense.fit(df_expense)
 df_income_test = df_income.tail(12)
 df_income_train = df_income.drop(df_income_test.index).reset_index(drop=True)
 
-model_income = Prophet()
+df_expense_test = df_expense.tail(12)
+df_expense_train = df_expense.drop(df_expense_test.index).reset_index(drop=True)
+
+holiday_names = ['Nepali New Year', 'Buddha Jayanti', 'Labor Day', 'Independence Day',
+                 'Dashain Festival', 'Tihar', 'Christmas', 'Holi', 'Teej']
+
+holiday_dates = [
+    '04-13',  # Nepali New Year
+    '04-08',  # Buddha Jayanti
+    '05-01',  # Labor Day
+    '08-15',  # Independence Day
+    '09-30',  # Dashain Festival
+    '10-25',  # Tihar
+    '12-25',  # Christmas
+    '03-06',  # Holi
+    '08-17'   # Teej
+]
+
+# Create a list of holidays for each year (from 2020 to 2025)
+years = range(2019, 2025)
+holidays_list = []
+
+for year in years:
+    for holiday_name, holiday_date in zip(holiday_names, holiday_dates):
+        holiday_full_date = f"{year}-{holiday_date}"
+        holidays_list.append({
+            'holiday': holiday_name,
+            'ds': pd.to_datetime(holiday_full_date),
+            'lower_window': 0,  # Effect starts on the holiday itself
+            'upper_window': 3 if holiday_name in ['Tihar', 'Dashain Festival'] else 1  # Effect lasts 1 day after the holiday (adjust as needed)
+        })
+
+holidays_nepal = pd.DataFrame(holidays_list)
+
+model_income = Prophet(
+)
 model_income.fit(df_income_train)
 df_future_income2 = model_income.make_future_dataframe(periods=12, freq='ME')
 forecast_income = model_income.predict(df_future_income2)
@@ -71,9 +104,25 @@ print(f"MAPE: {mape:.4f}")
 mae = mean_absolute_error(actual_income, predicted_income)
 print(f"MAE: {mae:.4f}")
 
-# data = df_long.sort_index()
+model_expense = Prophet(
+    holidays=holidays_nepal,
+)
+model_expense.fit(df_expense_train)
+df_future_expense2 = model_expense.make_future_dataframe(periods=12, freq='ME')
+forecast_expense = model_expense.predict(df_future_expense2)
+actual_expense = df_expense_test['y']  # last 12 data points as test
+predicted_expense = forecast_expense['yhat'].tail(12)
 
-# ts_data = data['Expense']
+print(f"Predicted Expense: {predicted_expense.values}")
+print(f"Actual Expense: {actual_expense.values}")
+
+# Calculate MAPE
+mape = mean_absolute_percentage_error(actual_expense, predicted_expense)
+print(f"Expense MAPE: {mape:.4f}")
+
+# Calculate MAE
+mae = mean_absolute_error(actual_expense, predicted_expense)
+print(f"MAE: {mae:.4f}")
 
 # model = ExponentialSmoothing(ts_data, seasonal='add', seasonal_periods=12).fit()
 
