@@ -81,11 +81,6 @@ elif option == "Expense Forecasting":
     if st.button("Forecast Expenses"):
         fi, fs, fe = forecast_financials(budget_data, months)
 
-        # fi_plot = fi.set_index('ds')
-        # fs_plot = fs.set_index('ds')
-        # fe_plot = fe.set_index('ds')
-
-        # Each is a 1-col df with datetime index; Streamlit will plot cleanly
         st.subheader("Income forecast")
         st.line_chart(fi.set_index('ds').rename(columns={'yhat': 'Income Forecast'}))
 
@@ -97,63 +92,6 @@ elif option == "Expense Forecasting":
 
 elif option == "Financial Assistance":
    
- # st.header("Financial Assistance")
-    # st.write("Ask me anything about your finances and I'll try to help you.")
-
-    # # Initialize chat history in session state if it doesn't exist
-    # if 'chat_history' not in st.session_state:
-    #     st.session_state.chat_history = []
-
-    # # Display chat history
-    # for message in st.session_state.chat_history:
-    #     if message['is_user']:
-    #         st.chat_message("user").write(message['text'])
-    #     else:
-    #         st.chat_message("assistant").write(message['text'])
-
-    # # Chat input
-    # user_question = st.chat_input("Ask a question about your finances...")
-
-    # if user_question:
-    #     # Add user message to chat history
-    #     st.session_state.chat_history.append({"is_user": True, "text": user_question})
-
-    #     # Display user message
-    #     st.chat_message("user").write(user_question)
-
-    #     forecast = forecast_expenses(budget_data, 12)
-    #     avg_saving = budget_data['Saving'].mean()
-    #     avg_income = budget_data['Income'].mean()
-    #     avg_expenses = budget_data['Expenses'].mean()
-
-    #     user_info = {
-    #         "name": "User",
-    #         "income": avg_income,
-    #         "expenses": avg_expenses,
-    #         "savings": avg_saving
-    #     }
-
-
-    #     # Generate response
-    #     with st.spinner("Thinking..."):
-    #         response = get_chatbot_response(
-    #             user_question,
-    #             spending_history,
-    #             forecast,
-    #             budget_data,
-    #             user_info
-    #         )
-
-    #     # Add assistant response to chat history
-    #     st.session_state.chat_history.append({"is_user": False, "text": response})
-
-    #     # Display assistant response
-    #     st.chat_message("assistant").write(response)
-
-    # # Add a button to clear chat history
-    # if st.session_state.chat_history and st.button("Clear Chat History"):
-    #     st.session_state.chat_history = []
-    #     st.rerun()
     st.subheader("Chat with Finance Assistant")
     st.write("Ask me anything about your finances and I'll try to help you.")
 
@@ -203,14 +141,6 @@ elif option == "Financial Assistance":
         chat_container = st.container()
         with chat_container:
             st.markdown('<div class="chat-container">', unsafe_allow_html=True)
-
-            # # Display chat history with custom styling
-            # for message in st.session_state.chat_history:
-            #     if message['is_user']:
-            #         st.markdown(f'<div class="chat-message-user">{message["text"]}</div>', unsafe_allow_html=True)
-            #     else:
-            #         st.markdown(f'<div class="chat-message-assistant">{message["text"]}</div>', unsafe_allow_html=True)
-
 
     # Add buttons in the second column
     with chat_col2:

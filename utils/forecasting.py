@@ -27,5 +27,5 @@ def forecast_financials(data, months):
     y_future_income = future_income[['ds','yhat']].tail(int(months))
     y_future_savings = future_savings[['ds','yhat']].tail(int(months))
     y_future_expense = future_expense[['ds','yhat']].tail(int(months))
-
+    
     return y_future_income, y_future_savings, y_future_expense
