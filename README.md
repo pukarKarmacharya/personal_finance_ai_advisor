@@ -25,6 +25,6 @@ This project is a **personal finance advisor** that uses machine learning and ti
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository
 2. `uv sync`
-3. streamlit run main.py
+3. `streamlit run main.py`
