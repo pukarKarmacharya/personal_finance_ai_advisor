@@ -3,12 +3,12 @@ name = "personal-finance-ai-advisor"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 dependencies = [
-    "numpy>=2.3.2",
     "pandas>=2.3.2",
     "prophet>=1.1.7",
     "scikit-learn>=1.7.1",
+    "statsforecast>=2.0.2",
     "statsmodels>=0.14.5",
     "streamlit>=1.49.0",
 ]
